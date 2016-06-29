@@ -13,9 +13,9 @@ $(function() {
       if (data) {
         var result = data.results[0];
         $('#address').val(result.address1 + result.address2 + result.address3);
-  ons.notification.alert({
-    message: result.address1 + result.address2 + result.address3
-  });
+        ons.notification.alert({
+            message: result.address1 + result.address2 + result.address3
+        });
       // 中身が空の場合は、エラーメッセージを反映
       } else {
         $('#address').val('該当する住所が存在しません。');
