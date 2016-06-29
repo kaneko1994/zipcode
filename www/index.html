@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="Content-Security-Policy" content="default-src * data:; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+
+<title>jQuery TIPS</title>
+<script src="components/loader.js"></script>
+<script src="components/loader.css"></script>
+<script src="lib/onsenui/js/onsenui.min.js"></script>
+<!--<script type="text/javascript" src="test.js"></script> -->
+<script type="text/javascript" src="alert.js"></script>
+<link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
+<link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
+
+</head>
+<body>
+<ons-page>    
+
+  <ons-toolbar>
+    <div class="center">郵便番号検索</div>
+  </ons-toolbar>
+  
+  <div style="text-align:center;">
+  
+    <section style="padding: 8px">
+      <input type="number" pattern="\d*" class="text-input" ng-model="string" id="zip"  placeholder="郵便番号を入力" style="display: block; width: 100%">
+    </section>
+    <section>
+    <ons-button id="search">検索</ons-button>
+    </section>
+
+  </div>
+  <div style="text-align:center;">
+    <label for="address">住所：</label><br />
+    <input id="address" type="text" size="35" />
+  </div>
+
+</ons-page>
+</body>
+</html>
